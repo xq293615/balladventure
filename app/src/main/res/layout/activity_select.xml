@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0040FF"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/myactionbar_back"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择关卡"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/myselect_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="14dip"
+        android:layout_marginTop="14dip"
+        android:horizontalSpacing="7dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" />
+
+</LinearLayout>
